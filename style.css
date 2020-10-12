@@ -1,0 +1,203 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+header {
+    background-color: #efecdc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+#header-img {
+    
+    float: left;
+    height: 70px;
+    width: auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.nav-bar {
+    float: right;
+}
+
+.ulnav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links {
+    display: inline-block;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 25px;
+
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-links {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.nav-links a {
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(212, 156, 81);
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: brown;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 65px;
+}
+
+form h1 {
+    font-size: 35px;
+    padding: 5px;
+}
+
+form div input {
+    width: 250px;
+    border-radius: 5px;
+}
+
+form .submit-button {
+    width: 150px;
+    align-self: center;
+    margin: 15px;
+    border-color: CD8B76;
+    background-color: #efecdc;
+}
+
+.video-article {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border: 10px outset #CD8B76
+}
+
+/*main chunk*/
+
+/*first-part*/
+
+.first-half {
+    display: flex;
+}
+
+.about-armor {
+    flex: 4;
+    margin: 0 15px;
+}
+
+.armor-specs {
+    flex: 1.5;
+    margin: 0 15px;
+}
+
+
+/*Second Part*/
+
+.second-half {
+    background-color: beige;
+    display: flex;
+}
+
+.armor-img {
+    
+    height:750px;
+    width: auto;
+    padding: 35px;
+    padding-right: 0;
+}
+
+.pricing {
+    
+    margin-left: 10px;
+    
+}
+
+.pricing h5 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.pricing small {
+    font-size: 15px;
+}
+
+.pricing ul {
+    font-size: 25px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.pricing div {
+    
+    display: flex;
+}
+
+@media only screen and (max-width: 750px){
+    .second-half {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .armor-img {
+        padding: 0;
+        height: auto;
+        width: 350px;
+    }
+}
+
+/*Footer CSS*/
+
+footer {
+    background-color: #efecdc;
+    
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+
+}
+
+.footer-nav li {
+    list-style: none;
+    float: right;
+    padding: 35px;
+}
+
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgb(212, 156, 81);
+}
+
+footer::after {
+    content: '';
+    display: table;
+    clear: both;
+}
